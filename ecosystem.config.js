@@ -6,8 +6,9 @@ module.exports = {
   apps : [
     {
       name      : 'admin',
-      cwd       : '/home/vagrant/admin/',
-      script    : './bin/www',
+      error_file: "/var/log/pm2/err.log",
+      out_file  : "/var/log/pm2/out.log",
+      script    : '/home/vagrant/admin/bin/www',
       env: {
         PORT: 8080,
         NODE_ENV: 'staging',
