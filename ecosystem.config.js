@@ -15,5 +15,16 @@ module.exports = {
         SECRET:'keyboard cat'
       },
     },
+    {
+      name      : 'web',
+      error_file: "/var/log/pm2/web/err.log",
+      out_file  : "/var/log/pm2/web/out.log",
+      script    : '/home/vagrant/admin/server.js',
+      env: {
+        PORT: 8081,
+        NODE_ENV: 'staging',
+        SECRET:'gordon lightfoot'
+      },
+    },
   ]
 };
